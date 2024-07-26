@@ -1,0 +1,24 @@
+
+<nav>
+  <a routerLink="/customize-pallete" routerLinkActive="active">Customize Palette</a>
+  <a routerLink="/text-editor" routerLinkActive="active">Text Editor</a>
+</nav>
+
+<!--
+<div
+  class="menu-area"
+  (contextmenu)="contextMenu($event)"
+  (click)="disappearContext()"
+>
+  <div class="customContext" #menu (click)="stopProgragration($event)">
+    <ul>
+      <li>Cut</li>
+      <li>Copy</li>
+      <li>Past</li>
+      <li>Delete</li>
+    </ul>
+  </div>
+</div>
+-->
+
+<router-outlet></router-outlet>

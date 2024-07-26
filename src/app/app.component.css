@@ -1,0 +1,83 @@
+
+.menu-area{
+    margin-top: 10px;
+    margin:  10px; ;
+    height: 600px;
+    width: 600px;
+    border: 1px solid gray;
+}
+
+.customContext {
+    position: fixed;
+    background: #111;
+    width: 150px;
+    z-index: 100000000;
+    display: none;
+}
+
+.customContext ul{
+    margin: 0;
+    padding: 0;
+}
+
+.customContext ul li{
+    list-style-type: none;
+    padding: 10px 14px;
+    border-bottom: 1px solid rgb(46,46,46);
+    color: #555;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.customContext ul li:hover{
+    background-color: rgb(46, 46, 46);
+    color: #fff;
+}
+
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style for the navigation bar */
+  nav {
+    background-color: #333;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Style for navigation links */
+  nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Style for active link */
+  nav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Hover effect for navigation links */
+  nav a:hover {
+    background-color: #575757;
+    color: white;
+  }
+  
+  /* Responsive design: stack links vertically on small screens */
+  @media screen and (max-width: 600px) {
+    nav a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
